@@ -219,7 +219,26 @@
          Crea una funzione che aggiunga una riga alla tabella precedentemente creata e fornisca i dati necessari come parametri
       */
 
-      const addRow = function () {};
+      const addRow = function () {
+        let row_2 = document.createElement("tr");
+        let row_2_d1 = document.createElement("td");
+        row_2_d1.innerText = "Banana";
+        let row_2_d2 = document.createElement("td");
+        row_2_d2.innerText = "Chiquita";
+        let row_2_d3 = document.createElement("td");
+        row_2_d3.innerText = "Frutto";
+        let row_2_d4 = document.createElement("td");
+        row_2_d4.innerText = "1";
+        let row_2_d5 = document.createElement("td");
+        row_2_d5.innerText = "0,35€";
+        row_2.appendChild(row_2_d1);
+        row_2.appendChild(row_2_d2);
+        row_2.appendChild(row_2_d3);
+        row_2.appendChild(row_2_d4);
+        row_2.appendChild(row_2_d5);
+        tbody.appendChild(row_2);
+      };
+      addRow();
 
       /* ESERCIZIO 14
         Crea una funzione che nasconda le immagini della tabella quando eseguita
