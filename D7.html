@@ -190,6 +190,30 @@
       */
 
       const generateTable = function () {};
+      let table = document.createElement("table");
+      let thead = document.createElement("thead");
+      let tbody = document.createElement("tbody");
+      table.appendChild(thead);
+      table.appendChild(tbody);
+      document.getElementById("tableArea").appendChild(table);
+      let row_1 = document.createElement("tr");
+      let heading1 = document.createElement("th");
+      heading1.innerText = "Immagine";
+      let heading2 = document.createElement("th");
+      heading2.innerText = "Nome";
+      let heading3 = document.createElement("th");
+      heading3.innerText = "Prodotto";
+      let heading4 = document.createElement("th");
+      heading4.innerText = "Quantità";
+      let heading5 = document.createElement("th");
+      heading5.innerText = "Prezzo";
+      row_1.appendChild(heading1);
+      row_1.appendChild(heading2);
+      row_1.appendChild(heading3);
+      row_1.appendChild(heading4);
+      row_1.appendChild(heading5);
+      thead.appendChild(row_1);
+      generateTable();
 
       /* ESERCIZIO 12
          Crea una funzione che aggiunga una riga alla tabella precedentemente creata e fornisca i dati necessari come parametri
